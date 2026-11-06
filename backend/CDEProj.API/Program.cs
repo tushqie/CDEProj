@@ -1,23 +1,33 @@
+using Microsoft.EntityFrameworkCore;
+using CDEProj.API.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add Controllers
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 
-var app = builder.Build();
+// Configure SQL Server
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(
+            builder.Configuration.GetConnectionString("DefaultConnection")
+                )
+                );
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+                // Add OpenAPI
+                builder.Services.AddOpenApi();
 
-app.UseHttpsRedirection();
+                var app = builder.Build();
 
-app.UseAuthorization();
+                // Configure HTTP pipeline
+                if (app.Environment.IsDevelopment())
+                {
+                    app.MapOpenApi();
+                    }
 
-app.MapControllers();
+                    app.UseHttpsRedirection();
 
-app.Run();
+                    app.UseAuthorization();
+
+                    app.MapControllers();
+
+                    app.Run();
