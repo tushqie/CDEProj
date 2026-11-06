@@ -1,0 +1,11 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   496    0   273  100   223   1899   1551 --:--:-- --:--:-- --:--:--  3468
+HTTP/1.1 201 Created
+Content-Type: application/json; charset=utf-8
+Date: Fri, 06 Nov 2026 17:39:12 GMT
+Server: Kestrel
+Location: http://localhost:5000/api/Products/2
+Transfer-Encoding: chunked
+
+{"id":2,"name":"HP EliteBook 840 G10","description":"HP EliteBook business laptop with Intel Core i7, 16GB RAM and 512GB SSD","price":1250000,"stockQuantity":8,"imageUrl":"https://example.com/hp-elitebook-840.jpg","isActive":true,"createdAt":"2026-11-06T17:39:12.9074751Z"}
