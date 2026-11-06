@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CDEProj.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76867d5523d1d15d17a0b765e1d0be5a7d113972")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07b8cc5d188f84fd5a3540c3dfb34bc3000cbaa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CDEProj.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CDEProj.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
